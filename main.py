@@ -162,13 +162,7 @@ def send_messages():
         while retry_count < max_retries and not message_sent:
             try:
                 # Yeh photo file tere script ke paas 'attached_assets' folder mein honi chahiye
-                with open("IMG_20250709_153403_228_1752056794715.jpg", 'rb') as photo:
-                    files = {'photo': photo}
-                    data = {
-                        'chat_id': chat_id, 'caption': message, 'parse_mode': 'HTML',
-                        'reply_markup': json.dumps(reply_markup)
-                    }
-                    response = requests.post(f'{telegram_api}/sendPhoto', files=files, data=data)
+    
                     
                     if response.status_code == 200:
                         print(f"✅ Sent card {i}: {card_type} - {card_details}")
