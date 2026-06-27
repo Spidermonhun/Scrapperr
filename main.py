@@ -89,7 +89,7 @@ def generate_card_details():
 def send_messages():
     # Bot configuration
     bot_token = '8653599069:AAFEI7obrqVmAgXe6RiJBuW0h91gqYQ6XCc'
-    chat_id = -5218817460
+    chat_id = -1004365237647
     telegram_api = f'https://api.telegram.org/bot{bot_token}'
 
     # Configuration
