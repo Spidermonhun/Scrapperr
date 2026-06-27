@@ -162,7 +162,7 @@ def send_messages():
         while retry_count < max_retries and not message_sent:
             try:
                 # Yeh photo file tere script ke paas 'attached_assets' folder mein honi chahiye
-                with open("attached_assets/IMG_20250709_153403_228_1752056794715.jpg", 'rb') as photo:
+                with open("IMG_20250709_153403_228_1752056794715.jpg", 'rb') as photo:
                     files = {'photo': photo}
                     data = {
                         'chat_id': chat_id, 'caption': message, 'parse_mode': 'HTML',
